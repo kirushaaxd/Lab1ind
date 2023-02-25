@@ -4,9 +4,8 @@ array = []
 
 
 def createArray(num):
-    for i in range(0, num + 10):
-        array.append(randint(5, num * 10))
+    array = [randint(5, num * 100) for i in range(0, num+10)]
+    print(array)
 
 
 createArray(17)
-print(array)
